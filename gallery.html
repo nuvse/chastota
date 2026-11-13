@@ -4,34 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Фото и видео — Плюс-минус восемь</title>
-<meta name="theme-color" content="#0e1726">
+<meta name="theme-color" content="#000000">
 <meta name="description" content="«Частота» — работа магистрантов «Цифрового искусства» ДВФУ для фестиваля «Плюс-минус восемь. Владивосток — Калининград».">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=Unbounded:wght@500&display=swap&subset=cyrillic" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&subset=cyrillic&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="site-head"><div class="wrap">
-<a class="logo" href="index.html">Плюс-минус <span>8</span></a>
+<a class="logo" href="index.html" aria-label="Плюс-минус восемь">±8</a>
 <nav aria-label="Основное меню">
 <a href="index.html">Работа</a>
 <a href="about.html">О фестивале</a>
 <a href="gallery.html" aria-current="page">Фото и видео</a>
 </nav></div></header>
 <main class="wrap page">
-<h1>Фото и видео с форума</h1>
+<h1 class="title">Фото и видео <span class="dim">с форума</span></h1>
 <div class="bar">
 <p id="count"></p>
-<button class="btn solid" id="dlAll" type="button" hidden>Скачать всё</button>
+<button class="btn" id="dlAll" type="button" hidden>Скачать всё</button>
 </div>
 <div class="grid" id="grid"></div>
-<div class="note" id="empty" hidden>Файлов пока нет. Добавьте их в папку <b>assets/gallery</b> и впишите имена в файл <b>js/media.js</b>.</div>
+<div class="note" id="empty" hidden>Файлов пока нет. Добавьте их в папку assets/gallery и впишите имена в файл js/media.js.</div>
 </main>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр файла">
 <div class="lb-top">
 <span class="count" id="lbCount"></span>
 <span class="acts">
-<a class="btn solid" id="lbDl" href="#" download>Скачать</a>
-<button class="btn" id="lbClose" type="button">Закрыть</button>
+<a class="btn" id="lbDl" href="#" download>Скачать</a>
+<button class="btn ghost" id="lbClose" type="button">Закрыть</button>
 </span>
 </div>
 <div class="lb-stage" id="stage">
